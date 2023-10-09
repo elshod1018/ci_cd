@@ -2,10 +2,10 @@
 
 ### Administrator User (Full Permissions)
 
-- **elshod_10_18:** admin
-- **2003elshod:** Admin Password
+- **Username:** elshod_10_18
+- **Password:** 2003elshod
 
 ### Developer User (Build and Cancel Builds)
 
-- **developer:** developer
-- **2003elshod:** 
+- **Username:** developer
+- **Password:** 2003elshod
