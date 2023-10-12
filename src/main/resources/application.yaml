@@ -1,2 +1,4 @@
 server:
   port: 8585
+  servlet:
+    context-path: ci_cd
