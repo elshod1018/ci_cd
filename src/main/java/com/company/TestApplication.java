@@ -31,8 +31,8 @@ public class TestApplication extends SpringBootServletInitializer {
     }
 
     @GetMapping("")
-    public ResponseEntity<Integer> sum(@RequestParam(name = "a") Integer num1,
-                                             @RequestParam(name = "b") Integer num2) {
+    public ResponseEntity<Integer> sum(@RequestParam(name = "a", defaultValue = "5") Integer num1,
+                                       @RequestParam(name = "b", defaultValue = "7") Integer num2) {
         return ResponseEntity.ok(main.sum(num1, num2));
     }
 }
