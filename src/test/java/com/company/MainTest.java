@@ -25,6 +25,6 @@ class MainTest {
 
     @Test
     void sumForFail() {
-        assertNotEquals(2, main.sum(1, 1));
+        assertEquals(2, main.sum(1, 1));
     }
 }
