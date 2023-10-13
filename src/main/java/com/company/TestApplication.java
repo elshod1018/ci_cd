@@ -1,22 +1,12 @@
 package com.company;
 
-import lombok.RequiredArgsConstructor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-@RequestMapping("/sum")
 @SpringBootApplication
-@RequiredArgsConstructor
 public class TestApplication extends SpringBootServletInitializer {
-    private final Main main;
 
     public static void main(String[] args) {
         SpringApplication.run(TestApplication.class, args);
@@ -25,11 +15,5 @@ public class TestApplication extends SpringBootServletInitializer {
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
         return builder.sources(TestApplication.class);
-    }
-
-    @GetMapping("")
-    public ResponseEntity<Integer> sum(@RequestParam(name = "a", defaultValue = "5") Integer num1,
-                                       @RequestParam(name = "b", defaultValue = "7") Integer num2) {
-        return ResponseEntity.ok(main.sum(num1, num2));
     }
 }
