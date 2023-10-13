@@ -1,7 +1,5 @@
 package com.company;
 
-import io.swagger.v3.oas.annotations.OpenAPIDefinition;
-import jdk.jfr.StackTrace;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-@OpenAPIDefinition
 @RestController
 @RequestMapping("/sum")
 @SpringBootApplication
